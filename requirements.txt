@@ -1,0 +1,11 @@
+groq
+langchain
+langchain-groq
+fastapi
+uvicorn
+duckdb
+pandas
+streamlit
+requests
+python-dotenv
+apache-airflow

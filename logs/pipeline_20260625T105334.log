@@ -1,0 +1,31 @@
+2026-06-25 10:53:34,139 INFO [ticket_triage_runner] ==================================================
+2026-06-25 10:53:34,139 INFO [ticket_triage_runner] Starting Ticket Triage Pipeline
+2026-06-25 10:53:34,140 INFO [ticket_triage_runner] ==================================================
+2026-06-25 10:53:34,140 INFO [ticket_triage_runner] Step 1: Loading raw tickets from CSV
+2026-06-25 10:53:34,171 INFO [ticket_triage_runner]   Limit set: processing first 10 tickets
+2026-06-25 10:53:34,171 INFO [ticket_triage_runner]   Loaded 10 tickets from data/raw/tickets.csv
+2026-06-25 10:53:34,172 INFO [ticket_triage_runner] Step 2: Cleaning and normalizing ticket text
+2026-06-25 10:53:34,178 INFO [ticket_triage_runner]   Cleaned 10 tickets successfully
+2026-06-25 10:53:34,179 INFO [ticket_triage_runner] Step 3: AI Classification using Groq API (LLaMA 3.3)
+2026-06-25 10:53:35,293 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 10:53:36,619 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 10:53:37,838 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 10:53:38,862 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 10:53:39,989 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 10:53:40,866 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 10:53:41,833 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 10:53:42,858 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 10:53:43,781 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 10:53:44,631 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 10:53:44,642 INFO [ticket_triage_runner]   Classified 10 tickets
+2026-06-25 10:53:44,643 INFO [ticket_triage_runner] Step 4: Storing results in DuckDB
+2026-06-25 10:53:44,717 INFO [storage.db] Tables created/verified successfully.
+2026-06-25 10:53:44,896 INFO [storage.db] Inserted/updated 10 tickets. Total in DB: 10
+2026-06-25 10:53:44,896 INFO [ticket_triage_runner]   Inserted/updated 10 tickets in DuckDB
+2026-06-25 10:53:44,944 INFO [ticket_triage_runner] ==================================================
+2026-06-25 10:53:44,944 INFO [ticket_triage_runner] Pipeline Complete! Summary:
+2026-06-25 10:53:44,945 INFO [ticket_triage_runner]   Total tickets in DB : 10
+2026-06-25 10:53:44,945 INFO [ticket_triage_runner]   By Category         : [{'category': 'billing', 'count': 3}, {'category': 'account_issue', 'count': 3}, {'category': 'bug', 'count': 2}, {'category': 'feature_request', 'count': 1}, {'category': 'general', 'count': 1}]
+2026-06-25 10:53:44,945 INFO [ticket_triage_runner]   By Priority         : [{'priority': 'HIGH', 'count': 5}, {'priority': 'LOW', 'count': 3}, {'priority': 'MEDIUM', 'count': 2}]
+2026-06-25 10:53:44,945 INFO [ticket_triage_runner] ==================================================
+2026-06-25 10:53:44,945 INFO [ticket_triage_runner] Log saved to: logs\pipeline_20260625T105334.log

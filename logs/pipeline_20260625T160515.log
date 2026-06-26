@@ -1,0 +1,568 @@
+2026-06-25 16:05:15,162 INFO [ticket_triage_runner] ==================================================
+2026-06-25 16:05:15,162 INFO [ticket_triage_runner] Starting Ticket Triage Pipeline
+2026-06-25 16:05:15,162 INFO [ticket_triage_runner] ==================================================
+2026-06-25 16:05:15,162 INFO [ticket_triage_runner] Step 1: Loading raw tickets from CSV
+2026-06-25 16:05:15,173 INFO [ticket_triage_runner]   Loaded 200 tickets from data/raw/tickets.csv
+2026-06-25 16:05:15,173 INFO [ticket_triage_runner] Step 2: Cleaning and normalizing ticket text
+2026-06-25 16:05:15,188 INFO [ticket_triage_runner]   Cleaned 200 tickets successfully
+2026-06-25 16:05:15,188 INFO [ticket_triage_runner] Step 3: AI Classification using Groq API (LLaMA 3.3)
+2026-06-25 16:05:17,290 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:05:17,309 INFO [ai.classifier] Ticket TKT-1000 -> account_issue | HIGH
+2026-06-25 16:05:18,221 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:05:18,222 INFO [ai.classifier] Ticket TKT-1001 -> billing | HIGH
+2026-06-25 16:05:26,453 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:05:26,454 INFO [ai.classifier] Ticket TKT-1002 -> bug | MEDIUM
+2026-06-25 16:05:27,994 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:05:27,995 INFO [ai.classifier] Ticket TKT-1003 -> account_issue | LOW
+2026-06-25 16:05:29,181 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:05:29,182 INFO [ai.classifier] Ticket TKT-1004 -> billing | MEDIUM
+2026-06-25 16:05:30,100 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:05:30,102 INFO [ai.classifier] Ticket TKT-1005 -> feature_request | LOW
+2026-06-25 16:05:31,053 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:05:31,054 INFO [ai.classifier] Ticket TKT-1006 -> account_issue | HIGH
+2026-06-25 16:05:32,256 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:05:32,257 INFO [ai.classifier] Ticket TKT-1007 -> billing | HIGH
+2026-06-25 16:05:33,073 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:05:33,074 INFO [ai.classifier] Ticket TKT-1008 -> bug | MEDIUM
+2026-06-25 16:05:34,161 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:05:34,553 INFO [ai.classifier] Ticket TKT-1009 -> general | LOW
+2026-06-25 16:05:35,501 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:05:35,502 INFO [ai.classifier] Ticket TKT-1010 -> bug | MEDIUM
+2026-06-25 16:05:36,581 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:05:36,582 INFO [ai.classifier] Ticket TKT-1011 -> bug | MEDIUM
+2026-06-25 16:05:37,845 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:05:37,846 INFO [ai.classifier] Ticket TKT-1012 -> billing | HIGH
+2026-06-25 16:05:39,078 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:05:39,081 INFO [ai.classifier] Ticket TKT-1013 -> feature_request | LOW
+2026-06-25 16:05:39,962 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:05:39,964 INFO [ai.classifier] Ticket TKT-1014 -> bug | MEDIUM
+2026-06-25 16:05:47,909 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:05:47,911 INFO [ai.classifier] Ticket TKT-1015 -> account_issue | HIGH
+2026-06-25 16:05:48,700 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:05:48,701 INFO [ai.classifier] Ticket TKT-1016 -> bug | MEDIUM
+2026-06-25 16:05:49,585 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:05:49,586 INFO [ai.classifier] Ticket TKT-1017 -> bug | MEDIUM
+2026-06-25 16:05:50,509 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:05:50,510 INFO [ai.classifier] Ticket TKT-1018 -> account_issue | MEDIUM
+2026-06-25 16:06:00,999 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:01,002 INFO [ai.classifier] Ticket TKT-1019 -> billing | LOW
+2026-06-25 16:06:02,044 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:02,045 INFO [ai.classifier] Ticket TKT-1020 -> account_issue | HIGH
+2026-06-25 16:06:03,245 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:03,248 INFO [ai.classifier] Ticket TKT-1021 -> billing | HIGH
+2026-06-25 16:06:04,524 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:04,526 INFO [ai.classifier] Ticket TKT-1022 -> bug | MEDIUM
+2026-06-25 16:06:05,524 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:05,525 INFO [ai.classifier] Ticket TKT-1023 -> account_issue | LOW
+2026-06-25 16:06:06,791 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:06,793 INFO [ai.classifier] Ticket TKT-1024 -> billing | MEDIUM
+2026-06-25 16:06:07,761 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:07,763 INFO [ai.classifier] Ticket TKT-1025 -> feature_request | LOW
+2026-06-25 16:06:09,725 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:09,727 INFO [ai.classifier] Ticket TKT-1026 -> account_issue | HIGH
+2026-06-25 16:06:10,841 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:10,842 INFO [ai.classifier] Ticket TKT-1027 -> billing | HIGH
+2026-06-25 16:06:11,738 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:11,739 INFO [ai.classifier] Ticket TKT-1028 -> bug | MEDIUM
+2026-06-25 16:06:12,725 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:12,727 INFO [ai.classifier] Ticket TKT-1029 -> general | LOW
+2026-06-25 16:06:13,726 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:13,727 INFO [ai.classifier] Ticket TKT-1030 -> bug | MEDIUM
+2026-06-25 16:06:14,593 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:14,615 INFO [ai.classifier] Ticket TKT-1031 -> bug | MEDIUM
+2026-06-25 16:06:15,576 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:15,577 INFO [ai.classifier] Ticket TKT-1032 -> billing | HIGH
+2026-06-25 16:06:16,500 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:16,501 INFO [ai.classifier] Ticket TKT-1033 -> feature_request | LOW
+2026-06-25 16:06:17,340 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:17,341 INFO [ai.classifier] Ticket TKT-1034 -> bug | MEDIUM
+2026-06-25 16:06:18,850 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:18,851 INFO [ai.classifier] Ticket TKT-1035 -> account_issue | HIGH
+2026-06-25 16:06:19,737 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:19,740 INFO [ai.classifier] Ticket TKT-1036 -> bug | MEDIUM
+2026-06-25 16:06:20,530 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:20,533 INFO [ai.classifier] Ticket TKT-1037 -> bug | MEDIUM
+2026-06-25 16:06:21,376 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:21,378 INFO [ai.classifier] Ticket TKT-1038 -> account_issue | MEDIUM
+2026-06-25 16:06:22,216 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:22,217 INFO [ai.classifier] Ticket TKT-1039 -> billing | LOW
+2026-06-25 16:06:23,570 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:23,572 INFO [ai.classifier] Ticket TKT-1040 -> account_issue | HIGH
+2026-06-25 16:06:24,201 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:06:24,201 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:06:26,997 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:26,998 INFO [ai.classifier] Ticket TKT-1041 -> billing | HIGH
+2026-06-25 16:06:27,673 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:06:27,673 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:06:30,763 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:30,765 INFO [ai.classifier] Ticket TKT-1042 -> bug | MEDIUM
+2026-06-25 16:06:31,475 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:06:31,476 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:06:34,458 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:34,460 INFO [ai.classifier] Ticket TKT-1043 -> account_issue | LOW
+2026-06-25 16:06:35,211 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:06:35,212 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:06:37,965 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:37,967 INFO [ai.classifier] Ticket TKT-1044 -> billing | HIGH
+2026-06-25 16:06:38,611 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:06:38,612 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:06:41,186 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:41,187 INFO [ai.classifier] Ticket TKT-1045 -> feature_request | LOW
+2026-06-25 16:06:41,952 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:06:41,953 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:06:44,687 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:44,688 INFO [ai.classifier] Ticket TKT-1046 -> account_issue | HIGH
+2026-06-25 16:06:45,486 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:06:45,487 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:06:48,103 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:48,124 INFO [ai.classifier] Ticket TKT-1047 -> billing | HIGH
+2026-06-25 16:06:48,780 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:06:48,780 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:06:51,244 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:51,245 INFO [ai.classifier] Ticket TKT-1048 -> bug | MEDIUM
+2026-06-25 16:06:52,204 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:06:52,205 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:06:54,605 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:54,606 INFO [ai.classifier] Ticket TKT-1049 -> general | LOW
+2026-06-25 16:06:55,576 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:06:55,578 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:06:58,129 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:06:58,132 INFO [ai.classifier] Ticket TKT-1050 -> bug | MEDIUM
+2026-06-25 16:06:58,914 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:06:58,915 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:07:24,251 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 0.795155 seconds
+2026-06-25 16:07:33,157 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:07:33,158 INFO [ai.classifier] Ticket TKT-1051 -> bug | MEDIUM
+2026-06-25 16:07:35,139 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:07:35,140 INFO [ai.classifier] Ticket TKT-1052 -> billing | HIGH
+2026-06-25 16:07:36,335 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:07:36,348 INFO [ai.classifier] Ticket TKT-1053 -> feature_request | LOW
+2026-06-25 16:07:37,395 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:07:37,396 INFO [ai.classifier] Ticket TKT-1054 -> bug | MEDIUM
+2026-06-25 16:07:38,309 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:07:38,311 INFO [ai.classifier] Ticket TKT-1055 -> account_issue | HIGH
+2026-06-25 16:07:39,220 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:07:39,221 INFO [ai.classifier] Ticket TKT-1056 -> bug | MEDIUM
+2026-06-25 16:07:40,275 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:07:40,276 INFO [ai.classifier] Ticket TKT-1057 -> bug | MEDIUM
+2026-06-25 16:07:41,154 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:07:41,155 INFO [ai.classifier] Ticket TKT-1058 -> account_issue | MEDIUM
+2026-06-25 16:07:42,182 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:07:42,190 INFO [ai.classifier] Ticket TKT-1059 -> billing | LOW
+2026-06-25 16:07:43,276 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:07:43,277 INFO [ai.classifier] Ticket TKT-1060 -> account_issue | HIGH
+2026-06-25 16:07:44,088 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:07:44,090 INFO [ai.classifier] Ticket TKT-1061 -> billing | HIGH
+2026-06-25 16:07:44,987 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:07:44,987 INFO [ai.classifier] Ticket TKT-1062 -> bug | MEDIUM
+2026-06-25 16:07:46,040 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:07:46,044 INFO [ai.classifier] Ticket TKT-1063 -> billing | LOW
+2026-06-25 16:07:46,837 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:07:46,839 INFO [ai.classifier] Ticket TKT-1064 -> billing | HIGH
+2026-06-25 16:07:47,744 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:07:47,747 INFO [ai.classifier] Ticket TKT-1065 -> feature_request | LOW
+2026-06-25 16:07:48,907 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:07:48,910 INFO [ai.classifier] Ticket TKT-1066 -> account_issue | HIGH
+2026-06-25 16:07:49,889 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:07:49,890 INFO [ai.classifier] Ticket TKT-1067 -> billing | HIGH
+2026-06-25 16:07:50,744 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:07:50,745 INFO [ai.classifier] Ticket TKT-1068 -> bug | MEDIUM
+2026-06-25 16:07:51,464 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:07:51,464 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:07:53,825 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:07:53,828 INFO [ai.classifier] Ticket TKT-1069 -> general | LOW
+2026-06-25 16:07:54,432 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:07:54,432 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:07:57,096 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:07:57,220 INFO [ai.classifier] Ticket TKT-1070 -> bug | MEDIUM
+2026-06-25 16:07:57,843 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:07:57,844 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:08:00,128 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:08:00,129 INFO [ai.classifier] Ticket TKT-1071 -> bug | MEDIUM
+2026-06-25 16:08:00,815 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:08:00,816 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:08:03,476 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:08:03,478 INFO [ai.classifier] Ticket TKT-1072 -> billing | HIGH
+2026-06-25 16:08:05,464 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:08:05,466 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:08:08,266 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:08:08,268 INFO [ai.classifier] Ticket TKT-1073 -> feature_request | LOW
+2026-06-25 16:08:11,291 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:08:11,294 INFO [ai.classifier] Ticket TKT-1074 -> bug | MEDIUM
+2026-06-25 16:08:12,141 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:08:12,145 INFO [ai.classifier] Ticket TKT-1075 -> account_issue | HIGH
+2026-06-25 16:08:12,761 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:08:12,763 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:08:15,145 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:08:15,150 INFO [ai.classifier] Ticket TKT-1076 -> bug | MEDIUM
+2026-06-25 16:08:15,788 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:08:15,788 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:08:18,156 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:08:18,159 INFO [ai.classifier] Ticket TKT-1077 -> bug | MEDIUM
+2026-06-25 16:08:18,784 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:08:18,786 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:08:21,709 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:08:21,712 INFO [ai.classifier] Ticket TKT-1078 -> account_issue | MEDIUM
+2026-06-25 16:08:22,979 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:08:22,980 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:08:25,622 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:08:25,625 INFO [ai.classifier] Ticket TKT-1079 -> billing | LOW
+2026-06-25 16:08:26,572 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:08:26,573 INFO [ai.classifier] Ticket TKT-1080 -> account_issue | HIGH
+2026-06-25 16:08:27,214 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:08:27,215 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:08:33,717 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:08:33,720 INFO [ai.classifier] Ticket TKT-1081 -> billing | HIGH
+2026-06-25 16:08:39,428 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:08:39,432 INFO [ai.classifier] Ticket TKT-1082 -> bug | MEDIUM
+2026-06-25 16:08:40,579 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:08:40,580 INFO [ai.classifier] Ticket TKT-1083 -> billing | LOW
+2026-06-25 16:08:41,580 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:08:41,583 INFO [ai.classifier] Ticket TKT-1084 -> billing | MEDIUM
+2026-06-25 16:08:42,764 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:08:42,765 INFO [ai.classifier] Ticket TKT-1085 -> feature_request | LOW
+2026-06-25 16:08:43,381 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:08:43,382 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:08:45,824 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:08:45,825 INFO [ai.classifier] Ticket TKT-1086 -> account_issue | HIGH
+2026-06-25 16:08:46,491 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:08:46,492 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:08:49,021 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:08:49,022 INFO [ai.classifier] Ticket TKT-1087 -> billing | HIGH
+2026-06-25 16:08:49,665 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:08:49,666 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:08:52,052 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:08:52,056 INFO [ai.classifier] Ticket TKT-1088 -> bug | MEDIUM
+2026-06-25 16:08:52,708 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:08:52,710 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:08:56,239 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:08:56,242 INFO [ai.classifier] Ticket TKT-1089 -> general | LOW
+2026-06-25 16:08:57,832 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:08:57,835 INFO [ai.classifier] Ticket TKT-1090 -> bug | MEDIUM
+2026-06-25 16:08:58,786 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:08:58,788 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:09:01,155 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:09:01,158 INFO [ai.classifier] Ticket TKT-1091 -> bug | MEDIUM
+2026-06-25 16:09:01,923 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:09:01,924 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:09:04,385 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:09:04,388 INFO [ai.classifier] Ticket TKT-1092 -> billing | HIGH
+2026-06-25 16:09:05,345 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:09:05,346 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:09:07,905 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:09:07,908 INFO [ai.classifier] Ticket TKT-1093 -> feature_request | LOW
+2026-06-25 16:09:08,545 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:09:08,546 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:09:11,425 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:09:11,428 INFO [ai.classifier] Ticket TKT-1094 -> bug | MEDIUM
+2026-06-25 16:09:12,066 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:09:12,067 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:09:14,785 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:09:14,788 INFO [ai.classifier] Ticket TKT-1095 -> account_issue | HIGH
+2026-06-25 16:09:15,425 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:09:15,426 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:09:17,826 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:09:17,829 INFO [ai.classifier] Ticket TKT-1096 -> bug | MEDIUM
+2026-06-25 16:09:18,480 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:09:18,480 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:09:20,794 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:09:20,796 INFO [ai.classifier] Ticket TKT-1097 -> bug | MEDIUM
+2026-06-25 16:09:21,501 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:09:21,502 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:09:23,883 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:09:23,886 INFO [ai.classifier] Ticket TKT-1098 -> account_issue | MEDIUM
+2026-06-25 16:09:24,507 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:09:24,508 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:09:27,021 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:09:27,024 INFO [ai.classifier] Ticket TKT-1099 -> billing | LOW
+2026-06-25 16:09:27,741 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:09:27,742 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:09:30,305 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:09:30,308 INFO [ai.classifier] Ticket TKT-1100 -> account_issue | HIGH
+2026-06-25 16:09:30,946 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:09:30,947 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:09:33,256 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:09:33,258 INFO [ai.classifier] Ticket TKT-1101 -> billing | HIGH
+2026-06-25 16:09:33,985 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:09:33,986 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:09:36,388 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:09:36,391 INFO [ai.classifier] Ticket TKT-1102 -> bug | MEDIUM
+2026-06-25 16:09:37,031 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:09:37,033 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:09:39,280 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:09:39,281 INFO [ai.classifier] Ticket TKT-1103 -> account_issue | LOW
+2026-06-25 16:09:39,928 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:09:39,930 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:09:42,341 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:09:42,344 INFO [ai.classifier] Ticket TKT-1104 -> billing | MEDIUM
+2026-06-25 16:09:42,951 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:09:42,952 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:09:47,305 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:09:47,306 INFO [ai.classifier] Ticket TKT-1105 -> feature_request | LOW
+2026-06-25 16:09:51,263 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:09:51,264 INFO [ai.classifier] Ticket TKT-1106 -> account_issue | HIGH
+2026-06-25 16:09:52,993 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:09:52,996 INFO [ai.classifier] Ticket TKT-1107 -> billing | HIGH
+2026-06-25 16:09:54,539 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:09:54,539 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:09:56,961 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:09:56,963 INFO [ai.classifier] Ticket TKT-1108 -> bug | MEDIUM
+2026-06-25 16:09:58,124 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:09:58,125 INFO [ai.classifier] Ticket TKT-1109 -> general | LOW
+2026-06-25 16:09:58,778 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:09:58,779 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:10:01,348 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:10:01,351 INFO [ai.classifier] Ticket TKT-1110 -> bug | MEDIUM
+2026-06-25 16:10:01,980 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:10:01,980 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:10:04,307 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:10:04,307 INFO [ai.classifier] Ticket TKT-1111 -> bug | MEDIUM
+2026-06-25 16:10:04,919 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:10:04,920 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:10:07,335 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:10:07,336 INFO [ai.classifier] Ticket TKT-1112 -> billing | HIGH
+2026-06-25 16:10:08,030 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:10:08,031 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:10:11,107 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:10:11,108 INFO [ai.classifier] Ticket TKT-1113 -> feature_request | LOW
+2026-06-25 16:10:11,722 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:10:11,723 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:10:14,374 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:10:14,375 INFO [ai.classifier] Ticket TKT-1114 -> bug | MEDIUM
+2026-06-25 16:10:14,974 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:10:14,975 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:10:17,352 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:10:17,355 INFO [ai.classifier] Ticket TKT-1115 -> account_issue | HIGH
+2026-06-25 16:10:17,991 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:10:17,991 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:10:20,310 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:10:20,311 INFO [ai.classifier] Ticket TKT-1116 -> bug | MEDIUM
+2026-06-25 16:10:20,988 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:10:20,990 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:10:23,428 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:10:23,430 INFO [ai.classifier] Ticket TKT-1117 -> bug | MEDIUM
+2026-06-25 16:10:24,703 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:10:24,703 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:10:27,393 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:10:27,394 INFO [ai.classifier] Ticket TKT-1118 -> account_issue | MEDIUM
+2026-06-25 16:10:28,489 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:10:28,490 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:10:30,988 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:10:30,989 INFO [ai.classifier] Ticket TKT-1119 -> billing | LOW
+2026-06-25 16:10:31,742 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:10:31,744 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:10:34,308 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:10:34,310 INFO [ai.classifier] Ticket TKT-1120 -> account_issue | HIGH
+2026-06-25 16:10:34,976 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:10:34,977 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:10:37,596 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:10:37,599 INFO [ai.classifier] Ticket TKT-1121 -> billing | HIGH
+2026-06-25 16:10:38,426 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:10:38,427 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:10:40,831 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:10:40,833 INFO [ai.classifier] Ticket TKT-1122 -> bug | MEDIUM
+2026-06-25 16:10:41,611 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:10:41,612 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:10:44,385 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:10:44,387 INFO [ai.classifier] Ticket TKT-1123 -> general | LOW
+2026-06-25 16:10:45,280 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:10:45,282 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:10:47,743 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:10:47,745 INFO [ai.classifier] Ticket TKT-1124 -> billing | MEDIUM
+2026-06-25 16:10:48,636 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:10:48,638 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:10:51,264 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:10:51,267 INFO [ai.classifier] Ticket TKT-1125 -> feature_request | LOW
+2026-06-25 16:10:52,065 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:10:52,066 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:10:54,566 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:10:54,569 INFO [ai.classifier] Ticket TKT-1126 -> account_issue | HIGH
+2026-06-25 16:10:55,590 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:10:55,591 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:10:57,984 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:10:57,987 INFO [ai.classifier] Ticket TKT-1127 -> billing | MEDIUM
+2026-06-25 16:10:58,796 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:10:58,798 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:11:03,033 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:11:03,036 INFO [ai.classifier] Ticket TKT-1128 -> bug | MEDIUM
+2026-06-25 16:11:04,541 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:11:04,542 INFO [ai.classifier] Ticket TKT-1129 -> general | LOW
+2026-06-25 16:11:05,180 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:11:05,181 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:11:07,689 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:11:07,691 INFO [ai.classifier] Ticket TKT-1130 -> bug | MEDIUM
+2026-06-25 16:11:08,380 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:11:08,381 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:11:10,789 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:11:10,792 INFO [ai.classifier] Ticket TKT-1131 -> bug | MEDIUM
+2026-06-25 16:11:11,425 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:11:11,426 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:11:13,836 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:11:13,839 INFO [ai.classifier] Ticket TKT-1132 -> billing | HIGH
+2026-06-25 16:11:14,884 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:11:14,886 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:11:17,432 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:11:17,435 INFO [ai.classifier] Ticket TKT-1133 -> feature_request | LOW
+2026-06-25 16:11:18,153 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:11:18,154 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:11:20,645 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:11:20,647 INFO [ai.classifier] Ticket TKT-1134 -> bug | MEDIUM
+2026-06-25 16:11:21,302 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:11:21,304 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:11:23,833 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:11:23,836 INFO [ai.classifier] Ticket TKT-1135 -> account_issue | HIGH
+2026-06-25 16:11:24,795 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:11:24,797 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:11:27,514 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:11:27,515 INFO [ai.classifier] Ticket TKT-1136 -> bug | MEDIUM
+2026-06-25 16:11:28,484 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:11:28,485 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:11:30,904 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:11:30,907 INFO [ai.classifier] Ticket TKT-1137 -> bug | MEDIUM
+2026-06-25 16:11:31,670 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:11:31,672 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:11:33,990 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:11:33,993 INFO [ai.classifier] Ticket TKT-1138 -> account_issue | MEDIUM
+2026-06-25 16:11:34,711 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:11:34,712 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:11:37,416 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:11:37,419 INFO [ai.classifier] Ticket TKT-1139 -> billing | LOW
+2026-06-25 16:11:38,147 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:11:38,149 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:11:40,552 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:11:40,555 INFO [ai.classifier] Ticket TKT-1140 -> account_issue | HIGH
+2026-06-25 16:11:41,346 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:11:41,347 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:11:43,885 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:11:43,888 INFO [ai.classifier] Ticket TKT-1141 -> billing | HIGH
+2026-06-25 16:11:44,522 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:11:44,523 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-06-25 16:11:53,043 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:11:53,048 INFO [ai.classifier] Ticket TKT-1142 -> bug | MEDIUM
+2026-06-25 16:12:32,089 INFO [groq._base_client] Retrying request to /openai/v1/chat/completions in 0.405390 seconds
+2026-06-25 16:12:34,566 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-25 16:12:34,569 INFO [ai.classifier] Ticket TKT-1143 -> account_issue | LOW
+2026-06-25 16:12:35,159 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:35,161 ERROR [ai.classifier] API error for TKT-1144: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99973, Requested 335. Please try again in 4m26.111999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:35,800 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:35,802 ERROR [ai.classifier] API error for TKT-1145: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99972, Requested 338. Please try again in 4m27.839999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:36,407 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:36,409 ERROR [ai.classifier] API error for TKT-1146: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99971, Requested 337. Please try again in 4m26.111999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:40,610 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:40,611 ERROR [ai.classifier] API error for TKT-1147: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99966, Requested 340. Please try again in 4m24.383999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:41,301 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:41,302 ERROR [ai.classifier] API error for TKT-1148: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99966, Requested 343. Please try again in 4m26.976s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:41,944 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:41,944 ERROR [ai.classifier] API error for TKT-1149: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99965, Requested 335. Please try again in 4m19.2s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:42,620 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:42,622 ERROR [ai.classifier] API error for TKT-1150: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99964, Requested 336. Please try again in 4m19.2s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:43,292 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:43,294 ERROR [ai.classifier] API error for TKT-1151: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99963, Requested 338. Please try again in 4m20.064s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:43,931 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:43,933 ERROR [ai.classifier] API error for TKT-1152: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99963, Requested 337. Please try again in 4m19.2s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:44,571 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:44,573 ERROR [ai.classifier] API error for TKT-1153: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99962, Requested 334. Please try again in 4m15.744s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:45,196 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:45,197 ERROR [ai.classifier] API error for TKT-1154: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99961, Requested 337. Please try again in 4m17.471999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:45,880 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:45,881 ERROR [ai.classifier] API error for TKT-1155: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99960, Requested 336. Please try again in 4m15.744s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:46,511 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:46,513 ERROR [ai.classifier] API error for TKT-1156: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99960, Requested 337. Please try again in 4m16.608s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:47,263 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:47,264 ERROR [ai.classifier] API error for TKT-1157: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99959, Requested 338. Please try again in 4m16.608s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:47,867 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:47,869 ERROR [ai.classifier] API error for TKT-1158: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99958, Requested 335. Please try again in 4m13.152s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:48,506 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:48,507 ERROR [ai.classifier] API error for TKT-1159: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99957, Requested 340. Please try again in 4m16.608s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:49,112 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:49,114 ERROR [ai.classifier] API error for TKT-1160: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99957, Requested 346. Please try again in 4m21.792s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:49,818 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:49,820 ERROR [ai.classifier] API error for TKT-1161: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99956, Requested 342. Please try again in 4m17.471999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:50,466 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:50,467 ERROR [ai.classifier] API error for TKT-1162: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99955, Requested 338. Please try again in 4m13.152s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:51,071 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:51,071 ERROR [ai.classifier] API error for TKT-1163: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99954, Requested 338. Please try again in 4m12.287999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:51,739 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:51,741 ERROR [ai.classifier] API error for TKT-1164: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99954, Requested 335. Please try again in 4m9.696s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:52,386 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:52,388 ERROR [ai.classifier] API error for TKT-1165: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99953, Requested 336. Please try again in 4m9.696s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:52,986 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:52,986 ERROR [ai.classifier] API error for TKT-1166: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99952, Requested 339. Please try again in 4m11.423999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:53,607 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:53,609 ERROR [ai.classifier] API error for TKT-1167: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99951, Requested 342. Please try again in 4m13.152s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:54,203 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:54,205 ERROR [ai.classifier] API error for TKT-1168: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99951, Requested 343. Please try again in 4m14.016s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:54,828 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:54,829 ERROR [ai.classifier] API error for TKT-1169: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99950, Requested 335. Please try again in 4m6.24s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:55,583 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:55,585 ERROR [ai.classifier] API error for TKT-1170: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99949, Requested 336. Please try again in 4m6.24s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:56,222 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:56,224 ERROR [ai.classifier] API error for TKT-1171: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99948, Requested 338. Please try again in 4m7.104s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:56,830 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:56,832 ERROR [ai.classifier] API error for TKT-1172: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99948, Requested 335. Please try again in 4m4.512s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:57,461 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:57,463 ERROR [ai.classifier] API error for TKT-1173: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99947, Requested 336. Please try again in 4m4.512s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:58,103 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:58,103 ERROR [ai.classifier] API error for TKT-1174: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99946, Requested 339. Please try again in 4m6.24s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:58,792 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:58,793 ERROR [ai.classifier] API error for TKT-1175: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99946, Requested 336. Please try again in 4m3.648s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:12:59,424 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:12:59,426 ERROR [ai.classifier] API error for TKT-1176: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99945, Requested 335. Please try again in 4m1.92s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:13:00,067 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:13:00,069 ERROR [ai.classifier] API error for TKT-1177: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99944, Requested 338. Please try again in 4m3.648s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:13:00,706 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:13:00,708 ERROR [ai.classifier] API error for TKT-1178: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99943, Requested 337. Please try again in 4m1.92s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:13:01,347 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:13:01,349 ERROR [ai.classifier] API error for TKT-1179: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99942, Requested 342. Please try again in 4m5.376s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:13:01,990 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:13:01,992 ERROR [ai.classifier] API error for TKT-1180: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99942, Requested 344. Please try again in 4m7.104s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:13:02,621 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:13:02,622 ERROR [ai.classifier] API error for TKT-1181: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99941, Requested 342. Please try again in 4m4.512s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:13:03,258 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:13:03,259 ERROR [ai.classifier] API error for TKT-1182: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99940, Requested 338. Please try again in 4m0.191999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:13:03,884 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:13:03,885 ERROR [ai.classifier] API error for TKT-1183: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99940, Requested 340. Please try again in 4m1.92s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:13:04,509 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:13:04,510 ERROR [ai.classifier] API error for TKT-1184: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99939, Requested 335. Please try again in 3m56.736s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:13:05,186 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:13:05,186 ERROR [ai.classifier] API error for TKT-1185: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99938, Requested 336. Please try again in 3m56.736s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:13:05,828 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:13:05,830 ERROR [ai.classifier] API error for TKT-1186: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99937, Requested 337. Please try again in 3m56.736s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:13:06,607 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:13:06,608 ERROR [ai.classifier] API error for TKT-1187: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99937, Requested 340. Please try again in 3m59.328s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:13:07,262 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:13:07,264 ERROR [ai.classifier] API error for TKT-1188: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99936, Requested 341. Please try again in 3m59.328s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:13:07,902 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:13:07,904 ERROR [ai.classifier] API error for TKT-1189: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99935, Requested 335. Please try again in 3m53.28s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:13:08,542 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:13:08,542 ERROR [ai.classifier] API error for TKT-1190: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99934, Requested 336. Please try again in 3m53.28s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:13:09,139 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:13:09,141 ERROR [ai.classifier] API error for TKT-1191: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99933, Requested 338. Please try again in 3m54.144s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:13:09,822 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:13:09,823 ERROR [ai.classifier] API error for TKT-1192: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99933, Requested 337. Please try again in 3m53.28s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:13:10,464 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:13:10,465 ERROR [ai.classifier] API error for TKT-1193: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99932, Requested 334. Please try again in 3m49.824s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:13:11,107 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:13:11,108 ERROR [ai.classifier] API error for TKT-1194: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99931, Requested 337. Please try again in 3m51.552s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:13:11,731 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:13:11,732 ERROR [ai.classifier] API error for TKT-1195: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99930, Requested 336. Please try again in 3m49.824s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:13:12,382 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:13:12,383 ERROR [ai.classifier] API error for TKT-1196: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99930, Requested 335. Please try again in 3m48.96s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:13:13,022 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:13:13,022 ERROR [ai.classifier] API error for TKT-1197: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99929, Requested 340. Please try again in 3m52.416s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:13:13,662 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:13:13,663 ERROR [ai.classifier] API error for TKT-1198: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99928, Requested 337. Please try again in 3m48.96s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:13:16,107 INFO [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-25 16:13:16,107 ERROR [ai.classifier] API error for TKT-1199: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kpr41e00fjvrdj03qsrhrysm` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99927, Requested 340. Please try again in 3m50.688s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-06-25 16:13:16,108 INFO [ticket_triage_runner]   Classified 200 tickets
+2026-06-25 16:13:16,108 INFO [ticket_triage_runner] Step 4: Storing results in DuckDB
+2026-06-25 16:13:16,137 INFO [storage.db] Tables created/verified successfully.
+2026-06-25 16:13:16,184 INFO [storage.db] Inserted/updated 200 tickets. Total in DB: 200
+2026-06-25 16:13:16,184 INFO [ticket_triage_runner]   Inserted/updated 200 tickets in DuckDB
+2026-06-25 16:13:16,215 INFO [ticket_triage_runner] ==================================================
+2026-06-25 16:13:16,215 INFO [ticket_triage_runner] Pipeline Complete! Summary:
+2026-06-25 16:13:16,215 INFO [ticket_triage_runner]   Total tickets in DB : 200
+2026-06-25 16:13:16,215 INFO [ticket_triage_runner]   By Category         : [{'category': 'general', 'count': 64}, {'category': 'bug', 'count': 50}, {'category': 'billing', 'count': 38}, {'category': 'account_issue', 'count': 34}, {'category': 'feature_request', 'count': 14}]
+2026-06-25 16:13:16,215 INFO [ticket_triage_runner]   By Priority         : [{'priority': 'MEDIUM', 'count': 119}, {'priority': 'HIGH', 'count': 45}, {'priority': 'LOW', 'count': 36}]
+2026-06-25 16:13:16,215 INFO [ticket_triage_runner] ==================================================
+2026-06-25 16:13:16,215 INFO [ticket_triage_runner] Log saved to: logs\pipeline_20260625T160515.log
